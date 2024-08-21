@@ -53,7 +53,6 @@ function calculoNumeroSecreto() {
 }
 
 function condicionesIniciales(){
-    crearVariables('h1', 'Juego del numero secreto');
     crearVariables('p', `Indique un numero del 1 al ${numeroMaximo}`);
     numeroSecreto= calculoNumeroSecreto();
     intentos= 1;
