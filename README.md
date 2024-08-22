@@ -7,8 +7,17 @@ _Herramientas utilizadas:_
   - JavaScript
 
   ---- Estado: Finalizado ---- <br>
---- Próximas actualizaciones serán para ingresar modificaciones personales en términos responsivos y de base de datos(ranking) ---
+--- Próximas actualizaciones serán para ingresar modificaciones en términos responsivos y de base de datos(ranking) ---
 <br><br>
 Diseño para ordenadores
 
-![juego](https://github.com/user-attachments/assets/71f24e3d-5acb-457f-a5db-5be6f0eef961)
+![juego-PC](https://github.com/user-attachments/assets/7356ecda-02e8-441e-b855-7075fa130b69)
+
+<br><br>
+Diseño para tablets
+
+![juego-tablet](https://github.com/user-attachments/assets/22a7c89a-3bb7-4b4d-90a8-6bf7d913bae9)
+<br><br>
+Diseño para tablets
+
+![juego-smart](https://github.com/user-attachments/assets/b3945c49-cc9c-4834-82bd-6403af84628a)
