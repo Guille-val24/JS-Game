@@ -5,6 +5,14 @@
     color: white;
 }
 
+:root{
+    --primary-color: #1875E8;
+    --secondary-color: #FFFFFF ;
+    --disabled-color: #898989;
+    --font-inter:  'Inter', sans-serif;
+    --font-h1: 'Chakra Petch', sans-serif;
+}
+
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
@@ -15,7 +23,7 @@ body {
 
 
 body::before {
-    background-image: url("img/code.png");
+    background-image: url("./code.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";
@@ -33,9 +41,9 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 1px solid #1875E8;
+    border: 1px solid var(--primary-color);
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
+    background-image: url("Ruido.png");
     background-size: 100% 100%;
     position: relative;
 }
@@ -55,17 +63,17 @@ body::before {
 
 .container__boton {
     border-radius: 16px;
-    background: #1875E8;
+    background: var(--primary-color);
     padding: 16px 24px;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     border: none;
     margin-top: 2rem;
 }
 
 .container__boton:disabled {
-    background: #898989;
+    background: var(--disabled-color);
 }
 
 .container__texto {
@@ -73,20 +81,20 @@ body::before {
 }
 
 .container__texto-azul {
-    color: #1875E8;
+    color: var(--primary-color);
 }
 
 .container__input {
     width: 100%;
     height: 72px;
     border-radius: 16px;
-    background-color: #FFF;
+    background-color: var(--secondary-color);
     border: none;
-    color: #1875E8;
+    color: var(--primary-color);
     padding: 2rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
 }
 
 .container__botones {
@@ -95,17 +103,122 @@ body::before {
 }
 
 h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-family: var(--font-h1);
+    font-size: 4.5rem;
     padding-bottom: 3rem;
 }
 
 p,
 button {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
 }
 
 .texto__parrafo {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
 }
+
+
+ /* Media query para tablets */
+ @media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .container {
+        margin: 12%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container__contenido{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .container__texto {
+        margin: 10px 0 50px 0;
+    }
+
+    .container__imagen-persona{
+        display: none;
+    }
+
+    .container__botones {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .container__boton{
+        margin: 5px; 
+    }
+       
+}
+
+
+ /* Media query para smartphones */
+ @media only screen and (min-width: 320px) and (max-width: 599px) {
+
+    .container {
+        margin: 6%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    .container__contenido{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container__texto {
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+
+    .container__imagen-persona{
+        display: none;
+    }
+
+        
+    .container__input {
+        width: 100%;
+        height: 5%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .container__botones {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 5px;
+    }
+
+    .container__boton{
+        margin: 2.5px;
+        font-size: 1rem; 
+    }
+
+    h1{
+      font-size: 3.5rem;  
+    }
+
+    .texto__parrafo{
+        font-size: 1.5rem;
+    }
+
+ }
