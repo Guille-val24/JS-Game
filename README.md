@@ -18,6 +18,6 @@ Diseño para tablets
 
 ![juego-tablet](https://github.com/user-attachments/assets/22a7c89a-3bb7-4b4d-90a8-6bf7d913bae9)
 <br><br>
-Diseño para tablets
+Diseño para smartphones
 
 ![juego-smart](https://github.com/user-attachments/assets/b3945c49-cc9c-4834-82bd-6403af84628a)
